@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 if (!deviceAddresses.contains(address)) {
                     String id;
                     if (name == null) {
-                        id = address;
+                        id = address + "\nRSSI: " + rssi + " dBm";
                     } else {
-                        id = address + " | " + name;
+                        id = address + " | " + name + "\nRSSI: " + rssi + " dBm";
                     }
 
                     deviceIds.add(id);
